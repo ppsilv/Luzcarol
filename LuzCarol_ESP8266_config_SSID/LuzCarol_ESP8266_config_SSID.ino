@@ -44,6 +44,8 @@ void setup()
     pinMode(BlueLED,OUTPUT);      
 
     setupServer();
+
+    setupOta();
 }
 
 void execWork(long r, long g, long b){
@@ -98,6 +100,7 @@ void handleLedConfig()
 
 void loop()
 {
+    loopOta();
     if ((WiFi.status() == WL_CONNECTED))
     {
         server.handleClient();

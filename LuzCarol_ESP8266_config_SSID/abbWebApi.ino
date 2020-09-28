@@ -8,8 +8,8 @@
 #include <ESP8266WebServer.h>
  
 //SSID and Password of your WiFi router
-const char* ssid = "2.4G_OpenSoftware";
-const char* password = "santos@info09";
+//const char* ssid = "2.4G_OpenSoftware";
+//const char* password = "";
  
 String setcolor="#ff00ff"; //Set color for HTML
 

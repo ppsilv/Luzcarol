@@ -61,7 +61,6 @@ bool connectWifi()
 void setupAccessPoint()
 {
 
-    Serial.println("Turning the HotSpot On");
     launchWeb();
     setupAP(); // Setup HotSpot
    
@@ -70,6 +69,7 @@ void setupAccessPoint()
 
     while ((WiFi.status() != WL_CONNECTED))
     {
+          Serial.println("Turning the HotSpot On");
 //        Serial.print(".");
         server.handleClient();
         handleLedConfig();
